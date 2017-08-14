@@ -2,15 +2,9 @@ const Pageres = require('pageres')
 const rimraf = require('rimraf')
 var fs = require('fs')
 
-const siteTitle = 'My Awesome Site'
-const baseDirectory = '/screenshots'
+// Update These
 const baseUrl = 'http://localhost:5000'
-const date = new Date()
-const dateFormat = `${date.getFullYear()}-${('0' + Number(date.getMonth() + 1)).substring(-2)}-${date.getDate()}`
-const templateName = 'screenshots-template.html'
-const templateTarget = `${__dirname}/${baseDirectory}/${dateFormat}/index.html`
-let html = ''
-
+const siteTitle = 'My Awesome Site'
 const siteMap = {
   home: {
     url: '',
@@ -32,6 +26,14 @@ const resolutions = [
   '992x992',
   '1200x992'
 ]
+
+// Optional
+const baseDirectory = '/screenshots'
+const date = new Date()
+const dateFormat = `${date.getFullYear()}-${('0' + Number(date.getMonth() + 1)).substring(-2)}-${date.getDate()}`
+const templateName = 'screenshots-template.html'
+const templateTarget = `${__dirname}/${baseDirectory}/${dateFormat}/index.html`
+let html = ''
 
 const createScreenshots = () => {
   const totalWidth = resolutions.reduce((total, item) => {
