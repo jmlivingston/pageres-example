@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "serve",
-    "screenshots": "node ./screenshots.js"
+    "screenshots": "node ./screenshots/build.js"
   },
   "author": "",
   "license": "ISC",
