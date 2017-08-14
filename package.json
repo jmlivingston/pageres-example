@@ -1,0 +1,19 @@
+{
+  "name": "pageres-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve",
+    "screenshots": "node ./screenshots.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "serve": "^6.0.6"
+  },
+  "devDependencies": {
+    "pageres": "^4.5.1",
+    "rimraf": "^2.6.1"
+  }
+}
